@@ -10,6 +10,18 @@
   <style>
     :root {
       color-scheme: light dark;
+      --bg: #ffffff;
+      --headline: #1d1d1f;
+      --subtext: #6e6e73;
+      --link: #0066cc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --headline: #f5f5f7;
+        --subtext: #86868b;
+        --link: #2997ff;
+      }
     }
     html, body {
       margin: 0;
@@ -20,47 +32,46 @@
       align-items: center;
       justify-content: center;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 300;
-      background: #ffffff;
-      color: #111111;
+      background: var(--bg);
+      color: var(--headline);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     .wrap {
       padding: 2rem;
       text-align: center;
     }
-    p {
-      font-size: 0.9rem;
-      letter-spacing: 0.02em;
+    .brand {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
       margin: 0;
     }
-    .brand {
-      font-size: 1.35rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 0.5rem;
+    .tagline {
+      font-size: 1.0625rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--subtext);
+      margin: 0.35rem 0 0;
     }
     .email {
-      margin-top: 0.75rem;
-      opacity: 0.6;
+      font-size: 1.0625rem;
+      font-weight: 400;
+      margin: 1.1rem 0 0;
     }
-    a {
-      color: inherit;
+    .email a {
+      color: var(--link);
       text-decoration: none;
     }
-    a:hover {
+    .email a:hover {
       text-decoration: underline;
-    }
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: #0b0b0f;
-        color: #e8e8ec;
-      }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <p class="brand">Spacetime</p>
-    <p>Probabilistic Machine Learning Lab</p>
+    <p class="tagline">Probabilistic Machine Learning Lab</p>
     <p class="email"><a href="mailto:hi@spacetimetechnologies.com">hi@spacetimetechnologies.com</a></p>
   </div>
 </body>
