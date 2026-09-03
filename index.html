@@ -12,11 +12,13 @@
       color-scheme: light dark;
       --bg: #ffffff;
       --text: #000000;
+      --muted: #4a4a4a;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #000000;
         --text: #ffffff;
+        --muted: #a1a1a6;
       }
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,14 +39,17 @@
     }
     .brand {
       font-size: 1.0625rem;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 0.01em;
     }
     .tagline {
       margin-top: 6px;
       font-size: 0.8125rem;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 0.02em;
+      color: var(--muted);
+      /* Helvetica Neue has no 350; nudge the 300 weight up with a hair of stroke */
+      -webkit-text-stroke: 0.3px currentColor;
     }
     @media (min-width: 768px) {
       .brand { font-size: 1.1875rem; }
