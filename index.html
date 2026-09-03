@@ -54,17 +54,23 @@
       color: var(--subtext);
       margin: 0.35rem 0 0;
     }
-    .email {
+    .cta {
+      margin: 1.5rem 0 0;
+    }
+    .cta a {
+      display: inline-block;
+      background: #0071e3;
+      color: #ffffff;
       font-size: 1.0625rem;
       font-weight: 400;
-      margin: 1.1rem 0 0;
-    }
-    .email a {
-      color: var(--link);
+      line-height: 1.2;
+      padding: 0.55rem 1.25rem;
+      border-radius: 980px;
       text-decoration: none;
+      transition: background-color 0.2s ease;
     }
-    .email a:hover {
-      text-decoration: underline;
+    .cta a:hover {
+      background: #0077ed;
     }
   </style>
 </head>
@@ -72,7 +78,7 @@
   <div class="wrap">
     <p class="brand">Spacetime</p>
     <p class="tagline">Probabilistic Machine Learning Lab</p>
-    <p class="email"><a href="mailto:hi@spacetimetechnologies.com">hi@spacetimetechnologies.com</a></p>
+    <p class="cta"><a href="mailto:hi@spacetimetechnologies.com">Contact</a></p>
   </div>
 </body>
 </html>
