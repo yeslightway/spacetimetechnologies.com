@@ -20,22 +20,38 @@
       background: #ffffff;
       color: #111111;
     }
+    .wrap {
+      padding: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    .email {
+      margin-top: 0.75rem;
+      opacity: 0.6;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     @media (prefers-color-scheme: dark) {
       body {
         background: #0b0b0f;
         color: #e8e8ec;
       }
     }
-    p {
-      font-size: 0.9rem;
-      letter-spacing: 0.02em;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
-  <p>Spacetime Technologies</p>
+  <div class="wrap">
+    <p>Probabilistic Machine Learning Lab</p>
+    <p class="email"><a href="mailto:hi@spacetimeetc.com">hi@spacetimeetc.com</a></p>
+  </div>
 </body>
 </html>
